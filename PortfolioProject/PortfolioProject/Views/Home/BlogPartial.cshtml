@@ -1,0 +1,37 @@
+﻿@model List<PortfolioProject.Models.BlogTbl>
+@{
+    ViewBag.Title = "BlogPartial";
+    Layout = "~/Views/Shared/_PortfolioLayout.cshtml";
+}
+
+<!-- home page about section -->
+<section class="w3l-clients" id="skills">
+    <div class="midd-w3 py-5">
+        <div class="container py-lg-5 py-md-3">
+            <div class="row">
+                <div class="col-lg-6 align-self">
+                    <div class="position-relative px-lg-5">
+                        <img src="~/Content/iportfolio-starter/assets/images/clients.png" alt="" class="radius-image img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-lg-0 mt-5">
+                    <span class="text">BLOĞUM</span>
+                    <h3 class="title-big">Bu kısımda Medium Bloğumdaki yazılarım yer alıyor. Göz atmak ister misiniz?</h3>
+                    @foreach (var item in Model)
+                    {
+                        <p class="mt-4">
+                            @item.BlogText
+                        </p>
+                        <ul class="service-list mt-md-5 mt-4">
+                            <li class="service-link"><a href="#">@item.BlogTitle</a></li>
+                        </ul>
+                    }
+
+                    <div id="owl-demo1" class="owl-carousel owl-theme mt-4 py-2 mb-4">
+                    </div>
+                </div>
+             </div>
+     </div>
+ </div>               
+</section>
+<!-- //home page about section -->

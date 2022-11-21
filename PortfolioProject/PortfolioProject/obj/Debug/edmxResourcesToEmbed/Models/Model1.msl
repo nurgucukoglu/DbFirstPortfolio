@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DbPortofioModelStoreContainer" CdmEntityContainer="DbPortofioEntities4">
+    <EntitySetMapping Name="AbilityTbl">
+      <EntityTypeMapping TypeName="DbPortofioModel.AbilityTbl">
+        <MappingFragment StoreEntitySet="AbilityTbl">
+          <ScalarProperty Name="AbilityId" ColumnName="AbilityId" />
+          <ScalarProperty Name="AbilityName" ColumnName="AbilityName" />
+          <ScalarProperty Name="AbilityImage" ColumnName="AbilityImage" />
+          <ScalarProperty Name="AbilityDescription" ColumnName="AbilityDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BlogTbl">
+      <EntityTypeMapping TypeName="DbPortofioModel.BlogTbl">
+        <MappingFragment StoreEntitySet="BlogTbl">
+          <ScalarProperty Name="BlogTitle" ColumnName="BlogTitle" />
+          <ScalarProperty Name="BlogText" ColumnName="BlogText" />
+          <ScalarProperty Name="BlogUrl" ColumnName="BlogUrl" />
+          <ScalarProperty Name="BlodId" ColumnName="BlodId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CertificateTbl">
+      <EntityTypeMapping TypeName="DbPortofioModel.CertificateTbl">
+        <MappingFragment StoreEntitySet="CertificateTbl">
+          <ScalarProperty Name="CertificateId" ColumnName="CertificateId" />
+          <ScalarProperty Name="CertificateName" ColumnName="CertificateName" />
+          <ScalarProperty Name="CertificateTitle" ColumnName="CertificateTitle" />
+          <ScalarProperty Name="CertificateDescription" ColumnName="CertificateDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContactTable">
+      <EntityTypeMapping TypeName="DbPortofioModel.ContactTable">
+        <MappingFragment StoreEntitySet="ContactTable">
+          <ScalarProperty Name="ContactId" ColumnName="ContactId" />
+          <ScalarProperty Name="ContactTitle" ColumnName="ContactTitle" />
+          <ScalarProperty Name="ContactDescription" ColumnName="ContactDescription" />
+          <ScalarProperty Name="ContactPhone" ColumnName="ContactPhone" />
+          <ScalarProperty Name="ContactMail" ColumnName="ContactMail" />
+          <ScalarProperty Name="ConactAddress" ColumnName="ConactAddress" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProfileTbl">
+      <EntityTypeMapping TypeName="DbPortofioModel.ProfileTbl">
+        <MappingFragment StoreEntitySet="ProfileTbl">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="Job" ColumnName="Job" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ProfileId" ColumnName="ProfileId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

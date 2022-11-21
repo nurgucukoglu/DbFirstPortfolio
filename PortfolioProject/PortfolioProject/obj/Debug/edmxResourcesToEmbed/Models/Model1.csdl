@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DbPortofioModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="AbilityTbl">
+    <Key>
+      <PropertyRef Name="AbilityId" />
+    </Key>
+    <Property Name="AbilityId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AbilityName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="AbilityImage" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="AbilityDescription" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="BlogTbl">
+    <Key>
+      <PropertyRef Name="BlodId" />
+    </Key>
+    <Property Name="BlogTitle" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BlogText" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="BlogUrl" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="BlodId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CertificateTbl">
+    <Key>
+      <PropertyRef Name="CertificateId" />
+    </Key>
+    <Property Name="CertificateId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CertificateName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="CertificateTitle" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CertificateDescription" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ContactTable">
+    <Key>
+      <PropertyRef Name="ContactId" />
+    </Key>
+    <Property Name="ContactId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ContactTitle" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ContactDescription" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ContactPhone" Type="Int32" />
+    <Property Name="ContactMail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ConactAddress" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ProfileTbl">
+    <Key>
+      <PropertyRef Name="ProfileId" />
+    </Key>
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Surname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Job" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ProfileId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityContainer Name="DbPortofioEntities4" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AbilityTbl" EntityType="Self.AbilityTbl" />
+    <EntitySet Name="BlogTbl" EntityType="Self.BlogTbl" />
+    <EntitySet Name="CertificateTbl" EntityType="Self.CertificateTbl" />
+    <EntitySet Name="ContactTable" EntityType="Self.ContactTable" />
+    <EntitySet Name="ProfileTbl" EntityType="Self.ProfileTbl" />
+  </EntityContainer>
+</Schema>

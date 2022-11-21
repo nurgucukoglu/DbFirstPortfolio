@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DbPortofioModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AbilityTbl">
+    <Key>
+      <PropertyRef Name="AbilityId" />
+    </Key>
+    <Property Name="AbilityId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AbilityName" Type="nvarchar" MaxLength="50" />
+    <Property Name="AbilityImage" Type="nvarchar" MaxLength="100" />
+    <Property Name="AbilityDescription" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="BlogTbl">
+    <Key>
+      <PropertyRef Name="BlodId" />
+    </Key>
+    <Property Name="BlogTitle" Type="nvarchar" MaxLength="50" />
+    <Property Name="BlogText" Type="nvarchar" MaxLength="100" />
+    <Property Name="BlogUrl" Type="nvarchar" MaxLength="100" />
+    <Property Name="BlodId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CertificateTbl">
+    <Key>
+      <PropertyRef Name="CertificateId" />
+    </Key>
+    <Property Name="CertificateId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CertificateName" Type="nvarchar" MaxLength="100" />
+    <Property Name="CertificateTitle" Type="nvarchar" MaxLength="50" />
+    <Property Name="CertificateDescription" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="ContactTable">
+    <Key>
+      <PropertyRef Name="ContactId" />
+    </Key>
+    <Property Name="ContactId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ContactTitle" Type="nvarchar" MaxLength="50" />
+    <Property Name="ContactDescription" Type="nvarchar" MaxLength="100" />
+    <Property Name="ContactPhone" Type="int" />
+    <Property Name="ContactMail" Type="nvarchar" MaxLength="50" />
+    <Property Name="ConactAddress" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="ProfileTbl">
+    <Key>
+      <PropertyRef Name="ProfileId" />
+    </Key>
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Surname" Type="nvarchar" MaxLength="50" />
+    <Property Name="Job" Type="nvarchar" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar" MaxLength="100" />
+    <Property Name="ProfileId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="DbPortofioModelStoreContainer">
+    <EntitySet Name="AbilityTbl" EntityType="Self.AbilityTbl" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BlogTbl" EntityType="Self.BlogTbl" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CertificateTbl" EntityType="Self.CertificateTbl" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ContactTable" EntityType="Self.ContactTable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProfileTbl" EntityType="Self.ProfileTbl" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
